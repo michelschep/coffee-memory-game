@@ -6,7 +6,7 @@ Een schattig memory spel met koffie kopjes, gebouwd met p5.js. Perfect voor een 
 
 ## 🎮 Speel het Spel
 
-**[Speel Coffee Memory Game →](https://yourusername.github.io/coffee-memory-game/)**
+**[Speel Coffee Memory Game →](https://michelschep.github.io/coffee-memory-game/)**
 
 ## ✨ Features
 
@@ -50,7 +50,7 @@ Het spel heeft een warme, uitnodigende Pinterest esthetiek:
 
 ```bash
 # Clone de repository
-git clone https://github.com/yourusername/coffee-memory-game.git
+git clone https://github.com/michelschep/coffee-memory-game.git
 
 # Open in browser
 cd coffee-memory-game
