@@ -57,11 +57,11 @@ class Card {
       this.flipProgress = max(0, this.flipProgress - 0.15);
     }
 
-    const scale = abs(cos(this.flipProgress * PI / 2));
+    const scaleX = abs(cos(this.flipProgress * PI / 2));
     const showFront = this.flipProgress > 0.5;
 
     push();
-    scale(scale, 1);
+    scale(scaleX, 1);
 
     // Card shadow
     fill(0, 0, 0, 20);
