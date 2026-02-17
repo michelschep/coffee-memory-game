@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>☕ Coffee Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>☕ Coffee Memory</h1>
+            <div class="stats">
+                <div class="stat">
+                    <span class="label">Zetten:</span>
+                    <span id="moves" class="value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Tijd:</span>
+                    <span id="time" class="value">0:00</span>
+                </div>
+            </div>
+        </header>
+        <div id="canvas-container"></div>
+        <div class="controls">
+            <button id="restart-btn" class="btn">Nieuw Spel</button>
+            <button id="scores-btn" class="btn btn-secondary">High Scores</button>
+        </div>
+    </div>
+
+    <div id="win-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>🎉 Gefeliciteerd!</h2>
+            <p class="win-stats">
+                <strong id="final-moves">0</strong> zetten in <strong id="final-time">0:00</strong>
+            </p>
+            <div id="high-score-message"></div>
+            <button id="play-again-btn" class="btn">Nog een keer!</button>
+        </div>
+    </div>
+
+    <div id="scores-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>🏆 High Scores</h2>
+            <div id="scores-list"></div>
+            <button id="close-scores-btn" class="btn">Sluiten</button>
+        </div>
+    </div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
